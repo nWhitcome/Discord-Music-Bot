@@ -1,26 +1,20 @@
 # Discord Club Bot
-**What is it?**
-I run a Discord server with my friends called "The Covid Club" where we have weekly meetings that are similar to a book club but for music and movies.
-This bot takes suggestions from users and puts up a poll using the "Simple Poll" bot. People then vote on those suggestions and one is chosen for the week.
-
-**What are the commands?**
-The bot has a few, such as:
-
-$suggest <album name> by <artist>
-  
-for the music club and:
- 
+A bot for Discord that takes suggestions from users for an "album of the week" or "movie of the week" and posts a poll for users to vote on. 
+## Commands
+```python
+$suggest <album name / song name> by <artist>
+```
+Suggests an album or song by an artist when posted in the music chat.
+The last Monday of every month is singles week, where everyone suggests a song that is added to a playlist.
+```python
 $suggest <movie name>
-
-for the movie club.
-The last Monday of every month is singles week for the music club, where everyone suggests a song and a playlist is created with all of the suggestions, which are done the same way.
-  
-Other commands that work for both are:
-  
+```
+Suggests a movie when posted in the movie chat.
+```python
 $list
-  
-which lists all of the current suggestions and
-  
+```
+Lists all current suggestions and the users they're associated with depending on which chat it is posted in.
+```python
 $delete
-  
-which deletes your own suggestion.
+```
+Delete your current suggestion.
